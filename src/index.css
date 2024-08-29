@@ -107,6 +107,10 @@ body {
   color: #e03131;
 }
 
+.yellow {
+  color: goldenrod;
+}
+
 form {
   font-size: 1.6rem;
   display: grid;
