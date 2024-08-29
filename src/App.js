@@ -27,6 +27,9 @@ export default function App() {
         <FormAddFriend />
         <Button>Add amigo</Button>
       </div>
+      <div>
+        <FormSplitBill />
+      </div>
     </div>
   );
 }
@@ -74,6 +77,26 @@ function FormAddFriend() {
       <label>🌄 Foto</label>
       <input type="text" />
       <Button>Adicionar</Button>
+    </form>
+  );
+}
+
+function FormSplitBill() {
+  return (
+    <form className="form-split-bill">
+      <h2>Dividir uma conta com X{}</h2>
+      <label>💰 Valor total</label>
+      <input type="text" />
+      <label>🧍‍♀️ Você gastou</label>
+      <input type="text" />
+      <label>👫 {"X"} gastou</label>
+      <input type="text" disabled />
+      <label>🤑 Quem vai pagar a conta?</label>
+      <select>
+        <option value="user">Você</option>
+        <option value="friend">Amigo</option>
+      </select>
+      <Button>Dividir conta</Button>
     </form>
   );
 }
